@@ -1,0 +1,95 @@
+2
+
+= this. letter letter;
+
+3
+
+4
+
+function Block (letter, rate, used, father, code) {
+
+this.rate= rate;
+
+this.used = used;
+
+this.father = father;
+
+this.code = code;
+
+}
+
+5
+
+6
+
+7
+
+8
+
+9
+
+function FindCode (block) {
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+16
+
+17
+
+if (tree[block. father].code != '') {
+
+block.code = tree[block.father].code + '1';
+
+}
+
+else {
+
+if (block.letter tree[minIndex].letter) {
+
+block.code = '0';
+
+}
+
+else if (block.letter tree[preminIndex].letter) { ==
+
+block.code = '1';
+
+}
+
+else {
+
+FindCode (tree[block.father]);
+
+block.code = tree[block.father]. code + '0';
+
+}
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+24
+
+25
+
+}
+
+|}
